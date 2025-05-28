@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/global.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Quicksand:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/932253e479.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Sandefjord Ridesenter</title>
+    <link rel="icon" href="assets/favicon-32x32.png" />
+    <!-- Favicon-ikon er hentet fra Font Awesome, og konvertert til favicon med https://favicon.io/favicon-converter/ -->
+  </head>
+  <body>
+    <header>
+      <!-- NAVIGASJON -->
+      <div class="nav-bar">
+        <a href="index.html"
+          ><h2 class="company-name">Sandefjord Ridesenter</h2></a
+        >
+        <nav>
+          <ul class="nav-menu">
+            <li>
+              <a href="index.html" class="nav-menu-item">Forside</a>
+            </li>
+            <li>
+              <a href="services.html" class="nav-menu-item">Våre tjenester</a>
+            </li>
+            <li>
+              <a href="contact.html" class="nav-menu-item">Kontakt oss</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <!-- BANNER -->
+      <div class="banner-container">
+        <div class="banner-text">
+          <h1>Sandefjord Ridesenter</h1>
+          <p>Rideskole, oppstalling, kurs og leir</p>
+          <a href="services.html"
+            ><button class="btn-2">Gå til våre tjenester</button></a
+          >
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="content-wrapper">
+        <!-- AKTUELT -->
+        <section class="content-container-1">
+          <h2 class="heading-center">Aktuelt</h2>
+
+          <div class="card">
+            <div class="card-img-holder">
+              <img
+                src="assets/show-jumping-touching-helmet-1920px.jpg"
+                alt="Rytter på sort hest på en sprangriding-bane med hindere."
+                class="img-in-holder"
+                srcset="
+                  assets/show-jumping-touching-helmet-640px.jpg   640w,
+                  assets/show-jumping-touching-helmet-1920px.jpg 1920w,
+                  assets/show-jumping-touching-helmet-2400px.jpg 2400w
+                "
+              />
+            </div>
+            <div class="card-text-holder">
+              <h3>Sprangridning</h3>
+
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
+                aut similique inventore libero culpa illo distinctio architecto
+                neque unde facilis! Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Atque auto neque unde facilis!
+              </p>
+
+              <a href="#" class="btn"><button class="btn-1">Les mer</button></a>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-img-holder">
+              <img
+                src="assets/riding-horse-sand-1920px.jpg"
+                alt="Rytter på brun hest på en sandfylt ridebane."
+                class="img-in-holder"
+                srcset="
+                  assets/riding-horse-sand-640px.jpg   640w,
+                  assets/riding-horse-sand-1920px.jpg 1920w,
+                  assets/riding-horse-sand-2400px.jpg 2400w
+                "
+              />
+            </div>
+            <div class="card-text-holder">
+              <h3>Konkurranse</h3>
+
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
+                aut similique inventore libero culpa illo distinctio architecto
+                neque unde facilis! Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Atque auto neque unde facilis!
+              </p>
+
+              <a href="#" class="btn">
+                <button class="btn-1">Les mer</button></a
+              >
+            </div>
+          </div>
+        </section>
+
+        <!-- ASIDE INFOBOX -->
+        <aside class="content-container-2">
+          <h2>Velkommen til oss!</h2>
+          <p>
+            Sandefjord Ridesenter ligger idyllisk til i vakre Sandefjord. Her
+            tar vi imot alle som har lyst til å ri på hest, gammel og ung. Meld
+            deg på enkeltkurs for å se om det er noe for deg. Vi har rideskole
+            for alle nivåer, også erfarne. Her kan vi skrive fine ting om
+            Sandefjord Rideskole.
+          </p>
+
+          <h2>Informasjon</h2>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi,
+            repudiandae magni. Itaque nobis mollitia eum hic eius, iste
+            explicabo id!
+          </p>
+
+          <h2>Åpningstider</h2>
+          <div>
+            <p>
+              Mandag&nbsp;-&nbsp;fredag:
+              <time datetime="07:00">07:00</time>&nbsp;-&nbsp;<time
+                datetime="21:00"
+                >21:00</time
+              >
+            </p>
+            <p>
+              Lørdag - Søndag:
+              <time datetime="07:00">07:00</time>&nbsp;-&nbsp;<time
+                datetime="20:00"
+                >20:00</time
+              >
+            </p>
+          </div>
+
+          <a href="contact.html"><button class="btn-2">Kontakt oss</button></a>
+          <!--
+            Kilde &nbsp; https://www.w3schools.com/html/html_entities.asp
+
+            Kilde time og datetime: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/time
+           -->
+        </aside>
+
+        <!-- BILDEGALLERI -->
+        <section class="content-container-3">
+          <h2 class="heading-center">Våre fasiliteter</h2>
+          <div class="photo-gallery-container">
+            <div class="photo-gallery-item photo-gallery-item-1">
+              <img
+                class="img-in-holder"
+                src="assets/stable-1920px.jpg"
+                alt="Hestebåser av tre inne i en stall med sort gitter på vinduene."
+                srcset="
+                  assets/stable-640px.jpg   640w,
+                  assets/stable-1920px.jpg 1920w,
+                  assets/stable-2400px.jpg 2400w
+                "
+              />
+            </div>
+            <div class="photo-gallery-item photo-gallery-item-2">
+              <img
+                class="img-in-holder"
+                src="assets/riding-track-1920px.jpg"
+                alt="Person rir på hvit hest på en sandfylt ridebane."
+                srcset="
+                  assets/riding-track-640px.jpg   640w,
+                  assets/riding-track-1920px.jpg 1920w,
+                  assets/riding-track-2400px.jpg 2400w
+                "
+              />
+            </div>
+            <div class="photo-gallery-item photo-gallery-item-3">
+              <img
+                class="img-in-holder"
+                src="assets/horse-farm-1920px.jpg"
+                alt="En gård med flere hester på et gress-jorde foran to røde hus."
+                srcset="
+                  assets/horse-farm-640px.jpg   640w,
+                  assets/horse-farm-1920px.jpg 1920w,
+                  assets/horse-farm-2400px.jpg 2400w
+                "
+              />
+            </div>
+
+            <div class="photo-gallery-item photo-gallery-item-4">
+              <img
+                class="img-in-holder"
+                src="assets/horse-stall-1920px.jpg"
+                alt="Hester som stikker hodet ut av båsene sine inne i en stall."
+                srcset="
+                  assets/horse-stall-640px.jpg   640w,
+                  assets/horse-stall-1920px.jpg 1920w,
+                  assets/horse-stall-2400px.jpg 2400w
+                "
+              />
+            </div>
+            <div class="photo-gallery-item photo-gallery-item-5">
+              <img
+                class="img-in-holder"
+                src="assets/stable2-1920px.jpg"
+                alt="Midtgangen i en hestestall med åpen dør ut. "
+                srcset="
+                  assets/stable2-640px.jpg   640w,
+                  assets/stable2-1920px.jpg 1920w,
+                  assets/stable2-2400px.jpg 2400w
+                "
+              />
+            </div>
+            <div class="photo-gallery-item photo-gallery-item-6">
+              <img
+                class="img-in-holder"
+                src="assets/show-jumping-in-air-1920px.jpg"
+                alt="Rytter på hest som hopper over et hinder på en sprangriding-bane."
+                srcset="
+                  assets/show-jumping-in-air-640px.jpg   640w,
+                  assets/show-jumping-in-air-1920px.jpg 1920w,
+                  assets/show-jumping-in-air-2400px.jpg 2400w
+                "
+              />
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+      <!-- SOSIALE MEDIER -->
+      <section>
+        <h3>Følg oss</h3>
+        <ul class="footer-list footer-socials">
+          <li>
+            <a href="#" aria-label="Instagram">
+              <i
+                class="fa-brands fa-instagram socials-icon"
+                aria-hidden="true"
+              ></i
+            ></a>
+          </li>
+          <li>
+            <a href="#" aria-label="Facebook"
+              ><i
+                class="fa-brands fa-facebook socials-icon"
+                aria-hidden="true"
+              ></i
+            ></a>
+          </li>
+          <li>
+            <a href="#" aria-label="Twitter/X"
+              ><i
+                class="fa-brands fa-twitter socials-icon"
+                aria-hidden="true"
+              ></i
+            ></a>
+          </li>
+          <li>
+            <a href="#" aria-label="LinkedIn"
+              ><i
+                class="fa-brands fa-linkedin socials-icon"
+                aria-hidden="true"
+              ></i
+            ></a>
+          </li>
+        </ul>
+      </section>
+      <!-- KONTAKT OSS -->
+      <section>
+        <h3>Kontakt oss</h3>
+        <ul class="footer-list footer-contact hover-underline">
+          <li>
+            <a
+              href="mailto:post@sandefjordridesenter.no"
+              aria-label="E-postadresse"
+              ><i
+                class="fa-solid fa-envelope contact-icon"
+                aria-hidden="true"
+              ></i
+              >post@sandefjordridesenter.no</a
+            >
+          </li>
+          <li>
+            <a href="tel:#" aria-label="Telefonnummer"
+              ><i class="fa-solid fa-phone contact-icon" aria-hidden="true"></i
+              >33 33 33 33</a
+            >
+          </li>
+          <!-- https://www.w3schools.com/tags/att_input_type_tel.asp -->
+          <li>
+            <a href="https://maps.google.com/" aria-label="Adresse"
+              ><i
+                class="fa-solid fa-location-dot contact-icon"
+                aria-hidden="true"
+              ></i>
+              Sandefjordveien 1, <br />9999 SANDEFJORD</a
+            >
+          </li>
+        </ul>
+      </section>
+      <!-- NYTTIGE LENKER -->
+      <section>
+        <h3>Nyttige lenker</h3>
+        <ul class="footer-list footer-links hover-underline">
+          <li><a href="#">Personvern</a></li>
+          <li><a href="#">Cookies</a></li>
+          <li><a href="#">Besøk denne siden</a></li>
+          <li><a href="#">Se flere</a></li>
+        </ul>
+      </section>
+    </footer>
+    <small class="copyright-declaration">2023 © Sandefjord Ridesenter</small>
+  </body>
+</html>

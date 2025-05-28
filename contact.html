@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="css/contact.css" />
+    <link rel="stylesheet" href="css/global.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Quicksand:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/932253e479.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Sandefjord Ridesenter | Kontakt</title>
+    <link rel="icon" href="assets/favicon-32x32.png" />
+  </head>
+  <body>
+    <header>
+      <!-- NAVIGASJON -->
+      <div class="nav-bar">
+        <a href="index.html"
+          ><h2 class="company-name">Sandefjord Ridesenter</h2></a
+        >
+        <nav>
+          <ul class="nav-menu">
+            <li>
+              <a href="index.html" class="nav-menu-item">Forside</a>
+            </li>
+            <li>
+              <a href="services.html" class="nav-menu-item">Våre tjenester</a>
+            </li>
+            <li>
+              <a href="contact.html" class="nav-menu-item">Kontakt oss</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <h1 class="heading-center">Kontakt oss</h1>
+
+      <div class="content-wrapper">
+        <!-- KART -->
+        <div class="map-container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2044.2344417754975!2d10.22933601213215!3d59.178657522966624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4646c746cc9652f5%3A0x70dabd61664fcf25!2sStall%20Bergan%20Ridesenter!5e0!3m2!1sno!2sno!4v1697631316643!5m2!1sno!2sno"
+            width="500"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            aria-label="kart fra Google Maps som viser rideskolens lokasjon"
+          ></iframe>
+          <!-- Kart hentet herfra: https://www.google.com/maps/place/Stall+Bergan+Ridesenter/@59.1786548,10.2319163,17z/data=!3m1!4b1!4m6!3m5!1s0x4646c746cc9652f5:0x70dabd61664fcf25!8m2!3d59.1786548!4d10.2319163!16s%2Fg%2F1td5dqk7?entry=ttu -->
+        </div>
+        <!-- KONTAKTINFORMASJON -->
+        <div class="text-container hover-underline">
+          <h2>Kontaktinformasjon</h2>
+          <h3>
+            <i class="fa-solid fa-envelope contact-icon" aria-hidden="true"></i
+            >E-postadresse
+          </h3>
+
+          <a href="mailto:post@sandefjordridesenter.no"
+            >post@sandefjordridesenter.no</a
+          >
+          <h3>
+            <i class="fa-solid fa-phone contact-icon" aria-hidden="true"></i
+            >Telefon
+          </h3>
+
+          <a href="tel:#">+47 33 33 33 33</a>
+
+          <h3>
+            <i
+              class="fa-solid fa-location-dot contact-icon"
+              aria-hidden="true"
+            ></i
+            >Adresse
+          </h3>
+          <a href="https://maps.google.com/">
+            Sandefjordveien 1, <br />9999 SANDEFJORD</a
+          >
+        </div>
+        <!-- KONTAKTSKJEMA -->
+        <div class="form-container">
+          <form>
+            <h2 class="heading-center">Vi ser frem til å høre fra deg!</h2>
+            <label for="name">Ditt navn</label>
+            <input name="name" id="name" type="text" required />
+
+            <label for="email">Epostadresse</label>
+            <input
+              name="email"
+              id="email"
+              type="email"
+              placeholder="kari@normann.no"
+              required
+            />
+
+            <label for="phonenumber">Telefon</label>
+            <input name="phonenumber" id="phonenumber" type="tel" required />
+
+            <label for="message">Din melding</label>
+            <textarea
+              name="message"
+              id="message"
+              rows="15"
+              placeholder="Skriv din melding.."
+              required
+            ></textarea>
+
+            <label for="newsletter"
+              ><input type="checkbox" name="checkbox" id="newsletter" />Jeg
+              ønsker å motta nyhetsbrev fra Sandefjord Rideklubb.
+            </label>
+
+            <button type="submit" class="btn-1">Send melding</button>
+          </form>
+          <!-- Kilde forms med id: https://www.w3schools.com/howto/howto_css_contact_form.asp -->
+        </div>
+      </div>
+    </main>
+    <!-- FOOTER -->
+    <footer>
+      <!-- SOSIALE MEDIER -->
+      <section>
+        <h3>Følg oss</h3>
+        <ul class="footer-list footer-socials">
+          <li>
+            <a href="#" aria-label="Instagram">
+              <i
+                class="fa-brands fa-instagram socials-icon"
+                aria-hidden="true"
+              ></i
+            ></a>
+          </li>
+          <li>
+            <a href="#" aria-label="Facebook"
+              ><i
+                class="fa-brands fa-facebook socials-icon"
+                aria-hidden="true"
+              ></i
+            ></a>
+          </li>
+          <li>
+            <a href="#" aria-label="Twitter/X"
+              ><i
+                class="fa-brands fa-twitter socials-icon"
+                aria-hidden="true"
+              ></i
+            ></a>
+          </li>
+          <li>
+            <a href="#" aria-label="LinkedIn"
+              ><i
+                class="fa-brands fa-linkedin socials-icon"
+                aria-hidden="true"
+              ></i
+            ></a>
+          </li>
+        </ul>
+      </section>
+      <!-- KONTAKT OSS -->
+      <section>
+        <h3>Kontakt oss</h3>
+        <ul class="footer-list footer-contact hover-underline">
+          <li>
+            <a
+              href="mailto:post@sandefjordridesenter.no"
+              aria-label="E-postadresse"
+              ><i
+                class="fa-solid fa-envelope contact-icon"
+                aria-hidden="true"
+              ></i
+              >post@sandefjordridesenter.no</a
+            >
+          </li>
+          <li>
+            <a href="tel:#" aria-label="Telefonnummer"
+              ><i class="fa-solid fa-phone contact-icon" aria-hidden="true"></i
+              >33 33 33 33</a
+            >
+          </li>
+          <!-- https://www.w3schools.com/tags/att_input_type_tel.asp -->
+          <li>
+            <a href="https://maps.google.com/" aria-label="Adresse"
+              ><i
+                class="fa-solid fa-location-dot contact-icon"
+                aria-hidden="true"
+              ></i>
+              Sandefjordveien 1, <br />9999 SANDEFJORD</a
+            >
+          </li>
+        </ul>
+      </section>
+      <!-- NYTTIGE LENKER -->
+      <section>
+        <h3>Nyttige lenker</h3>
+        <ul class="footer-list footer-links hover-underline">
+          <li><a href="#">Personvern</a></li>
+          <li><a href="#">Cookies</a></li>
+          <li><a href="#">Besøk denne siden</a></li>
+          <li><a href="#">Se flere</a></li>
+        </ul>
+      </section>
+    </footer>
+    <small class="copyright-declaration">2023 © Sandefjord Ridesenter</small>
+  </body>
+</html>

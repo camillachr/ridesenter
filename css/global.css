@@ -1,0 +1,207 @@
+/* 
+Alle bilder i oppgaven er hentet fra unsplash.com. 
+Ikoner er hentet fra Font Awesome. 
+Font er fra Google Fonts.
+
+Har hentet inspirasjon til selve innholdet (teksten) fra https://stallbergan.no/ .
+
+COLORS
+GREEN       76805b
+DARK BROWN  574F3E
+LIGHT BROWN B5B0A6
+SAND        f7f3ec
+*/
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Quicksand", sans-serif;
+  background-color: #f7f3ec;
+}
+
+main {
+  flex: 1;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Comfortaa", sans-serif;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+.heading-center {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  /* Ønsker å ha dette som utgangspunkt for alle linker før videre styling*/
+}
+
+.hover-underline a:hover {
+  text-decoration: underline;
+}
+
+.img-in-holder {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* IKONER BRUKT I FOOTER OG PÅ KONTAKT OSS 
+-------------------------------------------*/
+.socials-icon {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 25px;
+  /* https://markheath.net/post/font-awesome-circle-background */
+}
+
+.contact-icon {
+  margin-right: 10px;
+}
+
+/* BUTTONS 
+-------------------------*/
+
+button {
+  padding: 10px 15px;
+  margin: 0px auto;
+  border: none;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer; /* https://www.w3docs.com/snippets/css/how-to-change-cursor-on-hover-in-css.html */
+}
+
+.btn-1 {
+  background-color: #76805b;
+  color: white;
+}
+
+.btn-1:hover {
+  background-color: black;
+}
+
+.btn-2 {
+  background: white;
+  color: black;
+}
+
+.btn-2:hover {
+  background-color: black;
+  color: white;
+}
+
+/* NAVIGASJON 
+----------------------*/
+
+.nav-bar {
+  background-color: #574f3e;
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.company-name {
+  color: white;
+}
+
+.nav-menu {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 50px;
+}
+
+.nav-menu-item {
+  padding-bottom: 5px;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  color: white;
+}
+
+.nav-menu-item:hover {
+  border-bottom: 2px #d6cbbe solid; /* https://developer.mozilla.org/en-US/docs/Web/CSS/border-bottom */
+}
+
+/* FOOTER
+-----------------------*/
+
+footer {
+  background-color: #b5b0a6;
+  width: 100vw;
+  margin-top: auto; /* For å holde footer nederst. https://moderncss.dev/keep-the-footer-at-the-bottom-flexbox-vs-grid/ */
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  padding: 20px 0 20px 0;
+}
+
+.footer-list {
+  list-style-type: none;
+  padding: 0;
+  line-height: 1.5;
+}
+
+.footer-socials {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px;
+}
+
+.copyright-declaration {
+  background-color: #b5b0a6;
+  text-align: center;
+  padding: 7px;
+  font-size: small;
+  width: 100vw;
+}
+
+/* MEDIA
+----------------------------------- */
+
+@media only screen and (max-width: 860px) {
+  .nav-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+  }
+  .footer-socials {
+    display: inline-flex;
+  }
+
+  .footer-list {
+    line-height: 2;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+}

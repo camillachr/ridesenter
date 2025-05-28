@@ -1,0 +1,110 @@
+/* COLORS
+GREEN       76805b
+DARK BROWN  574F3E
+LIGHT BROWN B5B0A6
+SAND        f7f3ec
+*/
+
+/* MAIN 
+------------------------------------*/
+h1 {
+  margin-top: 40px;
+}
+
+.content-wrapper {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* TJENESTER 
+-------------------------------- */
+
+.content-container-1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.service-card {
+  background-color: white;
+  max-width: 350px;
+  min-width: 240px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border: 1px solid lightgray;
+  flex: 1;
+  position: relative;
+}
+
+.service-card-text-holder {
+  padding: 20px 20px 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.service-card a {
+  position: absolute;
+  bottom: 20px;
+  align-self: center;
+}
+
+/* PRISLISTE 
+----------------------*/
+
+.content-container-2 {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.pricing-card {
+  background-color: white;
+  border: 1px solid lightgray;
+  max-width: 1000px;
+  padding: 20px 30px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.pricing-card-text-holder {
+  flex: 60%;
+}
+
+.price {
+  font-size: 1.5rem;
+  align-self: center;
+}
+
+.pricing-card-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-self: center;
+}
+
+.pricing-card-buttons button {
+  width: 100px;
+}
+
+/* MEDIA
+--------------------------*/
+
+@media only screen and (max-width: 768px) {
+  .pricing-card {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+}
+
+@media only screen and (min-width: 400px) and (max-width: 768px) {
+  .pricing-card-buttons {
+    display: inline;
+  }
+}

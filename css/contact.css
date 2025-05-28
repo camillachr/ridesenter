@@ -1,0 +1,101 @@
+/* COLORS
+GREEN       76805b
+DARK BROWN  574F3E
+LIGHT BROWN B5B0A6
+SAND        f7f3ec
+*/
+
+/* MAIN 
+------------------------------------*/
+h1 {
+  margin-top: 40px;
+}
+
+.content-wrapper {
+  max-width: 1400px;
+  margin: 0px auto;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: minmax(300px, 500px) minmax(300px, 500px); /*https://developer.mozilla.org/en-US/docs/Web/CSS/minmax */
+}
+
+/* KART 
+-------------------------------- */
+
+.map-container {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+iframe {
+  width: 100%;
+}
+
+/* KONTAKTINFORMASJON 
+----------------------------------*/
+
+.text-container {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  background-color: #76805b;
+  color: white;
+  padding: 20px;
+}
+
+.text-container a {
+  color: white;
+}
+
+/* FORM - KONTAKTSKJEMA 
+-----------------------------*/
+.form-container {
+  grid-column: 1/3;
+  grid-row: 2/3;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 100%;
+  padding: 10px;
+}
+
+input {
+  padding: 1em; /* Bare for å vise at jeg kan em også */
+}
+
+textarea {
+  resize: none;
+  /* https://www.geeksforgeeks.org/how-to-disable-the-resize-grabber-of-textarea-in-html/ */
+  padding: 10px;
+}
+
+form button {
+  margin-top: 10px;
+}
+
+/* MEDIA
+---------------------------------- */
+
+@media only screen and (max-width: 768px) {
+  .content-wrapper {
+    grid-template-columns: minmax(0px, 700px);
+  }
+  .map-container {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    margin-top: 20px;
+  }
+
+  .text-container {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    text-align: center;
+  }
+
+  .form-container {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+}
